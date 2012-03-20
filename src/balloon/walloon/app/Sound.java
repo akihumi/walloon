@@ -30,8 +30,9 @@ public class Sound {
 		else
 		  return voice_mp[idx];
 	}
-	public void getKakusiSound(int idx){
-		laugh_voice[idx].start();
+	public void getKakusiSound(int idx, int num){
+		if(num % 50 == 0 && num != 0)
+		  laugh_voice[idx].start();
 	}
 	public MediaPlayer getKakusiSound(){
 		return laugh_voice[2];
