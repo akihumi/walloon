@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>walloon_ver.2.0</name>
+=======
+	<name>walloon</name>
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
 	<comment></comment>
 	<projects>
 	</projects>

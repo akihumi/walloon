@@ -3,10 +3,14 @@
 
     <string name="count_text">わるーん数：</string>
     <string name="icon_name">わるーん</string>
+<<<<<<< HEAD
     <string name="app_name">わるーん</string>
     <string name="set_background">背景画像を設定</string>
     <string name="set_bomb">破裂音を設定</string>
     <string name="filelist_empty">ファイルがありません</string>
     <string name="button_up">もどる</string>
+=======
+    <string name="app_name">わるーん</string>
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
 
 </resources>

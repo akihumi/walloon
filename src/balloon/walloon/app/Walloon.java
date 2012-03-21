@@ -1,6 +1,7 @@
 package balloon.walloon.app;
 
 import android.app.Activity;
+<<<<<<< HEAD
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -14,6 +15,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.ImageView;
+=======
+import android.os.Bundle;
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
 import android.widget.TextView;
 
 public class Walloon extends Activity {
@@ -22,18 +26,24 @@ public class Walloon extends Activity {
 	private Balloon walloon;
 	private Sound sound;
 	private TouchWalloon touch_walloon;
+<<<<<<< HEAD
 	Canvas canvas;
 	Bitmap bitmap;
 	int w,h;
 
+=======
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+<<<<<<< HEAD
 		Display disp=((WindowManager)getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
 		w=disp.getWidth();
 		h=disp.getHeight();
+=======
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
         //各クラスのインスタンスの生成
         walloon = new Balloon(Walloon.this);
         sound = new Sound(Walloon.this);
@@ -46,6 +56,7 @@ public class Walloon extends Activity {
         touch_walloon.setTouchEvent();
 	 }	  
 	@Override
+<<<<<<< HEAD
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater mi=getMenuInflater();
 		mi.inflate(R.menu.menu, menu);
@@ -73,6 +84,8 @@ public class Walloon extends Activity {
 		}
 	}
 	@Override
+=======
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
 	protected void onDestroy() {
 		super.onDestroy();
 	}
@@ -84,6 +97,7 @@ public class Walloon extends Activity {
 	protected void onResume() {
 		super.onResume();
 	}
+<<<<<<< HEAD
 	Bitmap loadImage(String path){
 		boolean landscape=false;
 		Bitmap bm;
@@ -120,4 +134,6 @@ public class Walloon extends Activity {
 		return bm;
 	}
 
+=======
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
 }

@@ -3,10 +3,14 @@
 
     <string name="count_text">walloon :</string>
     <string name="icon_name">walloon</string>
+<<<<<<< HEAD
     <string name="app_name">walloon</string>
     <string name="set_background">set background</string>
     <string name="filelist_empty">empty files</string>
     <string name="set_bomb">set bomb sound</string>
     <string name="button_up">back_folder</string>
+=======
+    <string name="app_name">walloon</string>
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
 
 </resources>
