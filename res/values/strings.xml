@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="count_text">walloon :</string>
+    <string name="icon_name">walloon</string>
+    <string name="app_name">walloon</string>
+    <string name="set_background">set background</string>
+    <string name="filelist_empty">empty files</string>
+    <string name="set_bomb">set bomb sound</string>
+    <string name="button_up">back_folder</string>
+
+</resources>

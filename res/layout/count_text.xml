@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+
+        <TextView
+            android:id="@+id/walloonCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/count_text"
+            android:textColor="#ff000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/numView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#ff000000"
+            android:textSize="24sp" />
+    
+</LinearLayout>
