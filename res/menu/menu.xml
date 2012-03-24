@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
   xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
     <item android:id="@+id/set_back" android:title="@string/set_background"></item>
     <item android:id="@+id/tweet_login" android:title="@string/move_login"></item>
     <item android:id="@+id/account" android:title="@string/account_change"></item>
     <item android:id="@+id/exit" android:title="@string/exit_walloon"></item>
+=======
+    <item android:icon="@android:drawable/ic_menu_set_as" android:id="@+id/set_back" android:title="@string/set_background"></item>
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 </menu>

@@ -3,10 +3,15 @@
 
     <string name="count_text">わるーん数：</string>
     <string name="icon_name">わるーん</string>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
     <string name="app_name">わるーん</string>
     <string name="set_background">背景画像を設定</string>
     <string name="set_bomb">破裂音を設定</string>
     <string name="filelist_empty">ファイルがありません</string>
+<<<<<<< HEAD
     <string name="button_up">上のフォルダにもどる</string>
     <string name="move_login">ツイートする</string>
     <string name="exit_walloon">終了する</string>
@@ -16,5 +21,11 @@
     <string name="label_no">いいえ</string>
     <string name="tweet_success">つぶやいたよ!</string>
     <string name="sorry_link">申し訳ございません。そのリンクは開けない仕様となっております</string>
+=======
+    <string name="button_up">もどる</string>
+=======
+    <string name="app_name">わるーん</string>
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 
 </resources>

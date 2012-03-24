@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/mainback"
@@ -10,5 +11,17 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:scaleType="matrix" />
+=======
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@drawable/mainback">
+
+    <ImageView
+        android:id="@+id/backView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix" />
+    
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 
 </LinearLayout>

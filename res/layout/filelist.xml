@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
   android:layout_width="fill_parent"
   android:layout_height="fill_parent" android:orientation="vertical">
     <Button android:layout_width="wrap_content" 
@@ -21,4 +22,11 @@
               android:smoothScrollbar="true"
                >
     </ListView>
+=======
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical">
+    <Button android:layout_width="wrap_content" android:id="@+id/Button01" android:layout_height="wrap_content" android:text="@string/button_up" android:onClick="upButtonClick"></Button>
+    <TextView android:text="@string/filelist_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@android:id/empty"></TextView>
+    <ListView android:layout_width="match_parent" android:layout_height="match_parent" android:id="@android:id/list"></ListView>
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 </LinearLayout>

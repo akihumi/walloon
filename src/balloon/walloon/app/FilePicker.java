@@ -7,7 +7,10 @@ import java.io.FileFilter;
 import java.util.Comparator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -22,6 +25,7 @@ public class FilePicker extends ListActivity {
 	String dir,externalStorageDir;
 	FileFilter fFilter;
 	Comparator<Object> comparator;
+<<<<<<< HEAD
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -29,6 +33,17 @@ public class FilePicker extends ListActivity {
 		externalStorageDir=Environment.getExternalStorageDirectory().toString();
 		SharedPreferences pref=this.getSharedPreferences("FilePickerPrefs", MODE_PRIVATE);
 		dir=pref.getString("Folder",externalStorageDir);
+=======
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		setContentView(R.layout.filelist);
+		externalStorageDir=Environment.getExternalStorageDirectory().toString();
+		SharedPreferences pref=this.getSharedPreferences("FilePickerPrefs", MODE_PRIVATE);
+		dir=pref.getString("Folder",externalStorageDir+"/mypaint");
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 		makeFileFilter();
 		makeComparator();
 		showList();
@@ -95,7 +110,11 @@ public class FilePicker extends ListActivity {
 				}else{
 					Intent i=new Intent();
 					i.putExtra("fn",((File) adapter.getItem(position)).getPath());
+<<<<<<< HEAD
 					setResult(Const.SET_BACKGROUND_CODE,i);
+=======
+					setResult(RESULT_OK,i);
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 					finish();
 				}
 			}

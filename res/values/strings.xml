@@ -3,11 +3,16 @@
 
     <string name="count_text">walloon :</string>
     <string name="icon_name">walloon</string>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
     <string name="app_name">walloon</string>
     <string name="set_background">set background</string>
     <string name="filelist_empty">empty files</string>
     <string name="set_bomb">set bomb sound</string>
     <string name="button_up">back_folder</string>
+<<<<<<< HEAD
     <string name="move_login">post walloon number to twitter</string>
     <string name="account_change">change twitter account</string>
     <string name="exit_walloon">walloon exit</string>
@@ -17,4 +22,10 @@
     <string name="tweet_success">tweet success!</string>
     <string name="sorry_link">sorry... this link is no pages.</string>      
           
+=======
+=======
+    <string name="app_name">walloon</string>
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
+
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 </resources>

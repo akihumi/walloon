@@ -1,5 +1,6 @@
 package balloon.walloon.app;
 
+<<<<<<< HEAD
 
 
 
@@ -16,18 +17,33 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+=======
+import android.app.Activity;
+<<<<<<< HEAD
+import android.content.Context;
+import android.content.Intent;
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.os.Bundle;
 import android.view.Display;
+<<<<<<< HEAD
 import android.view.KeyEvent;
+=======
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.ImageView;
+<<<<<<< HEAD
+=======
+=======
+import android.os.Bundle;
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 import android.widget.TextView;
 
 public class Walloon extends Activity {
@@ -36,17 +52,28 @@ public class Walloon extends Activity {
 	private Balloon walloon;
 	private Sound sound;
 	private TouchWalloon touch_walloon;
+<<<<<<< HEAD
 	private Tweet tw;
 	private Twitter twitter = null;
 	private RequestToken requestToken = null;
 	private String walloonStatus;
 	private Bitmap bitmap;
 	private int w,h;
+=======
+<<<<<<< HEAD
+	Canvas canvas;
+	Bitmap bitmap;
+	int w,h;
+
+=======
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+<<<<<<< HEAD
         //まぁ一応書いときます
 	    SharedPreferences pref = getSharedPreferences(Const.TWITTER_SETTING, MODE_PRIVATE);
 	    //これは必要だから消さないでね
@@ -57,6 +84,14 @@ public class Walloon extends Activity {
 		Display disp=((WindowManager)getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
 		w=disp.getWidth();
 		h=disp.getHeight();
+=======
+<<<<<<< HEAD
+		Display disp=((WindowManager)getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+		w=disp.getWidth();
+		h=disp.getHeight();
+=======
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
         //各クラスのインスタンスの生成
         walloon = new Balloon(Walloon.this);
         sound = new Sound(Walloon.this);
@@ -69,6 +104,10 @@ public class Walloon extends Activity {
         touch_walloon.setTouchEvent();
 	 }	  
 	@Override
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater mi=getMenuInflater();
 		mi.inflate(R.menu.menu, menu);
@@ -81,6 +120,7 @@ public class Walloon extends Activity {
 			Intent intent=new Intent(this, FilePicker.class);
 			startActivityForResult(intent, 0);
 			break;
+<<<<<<< HEAD
 		case R.id.tweet_login :
     		
     		//もう設定されているか？
@@ -117,6 +157,8 @@ public class Walloon extends Activity {
 			});
 			ab.show();
 			break;
+=======
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 		}
 		return super.onOptionsItemSelected(item);
 	}
@@ -124,6 +166,7 @@ public class Walloon extends Activity {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
+<<<<<<< HEAD
 		if(resultCode==Const.SET_BACKGROUND_CODE){
 			bitmap=loadImage(data.getStringExtra("fn"));
 			ImageView iv = (ImageView) findViewById(R.id.backView);
@@ -158,6 +201,18 @@ public class Walloon extends Activity {
 		return super.onKeyDown(keyCode, event);
 	}
 	@Override
+=======
+		if(resultCode==RESULT_OK){
+			bitmap=loadImage(data.getStringExtra("fn"));
+			//canvas = new Canvas(bitmap);
+			ImageView iv = (ImageView) findViewById(R.id.backView);
+			iv.setImageBitmap(bitmap);
+		}
+	}
+	@Override
+=======
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 	protected void onDestroy() {
 		super.onDestroy();
 	}
@@ -169,6 +224,7 @@ public class Walloon extends Activity {
 	protected void onResume() {
 		super.onResume();
 	}
+<<<<<<< HEAD
 	
     final private boolean isConnected(String walloonStatus){
 		if(walloonStatus != null && walloonStatus.equals(Const.AVAILABLE)){
@@ -212,25 +268,40 @@ public class Walloon extends Activity {
 		boolean landscape=false;
 		Bitmap bm;
 		// 画像サイズを取得
+=======
+<<<<<<< HEAD
+	Bitmap loadImage(String path){
+		boolean landscape=false;
+		Bitmap bm;
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 		BitmapFactory.Options options=new BitmapFactory.Options();
 		options.inJustDecodeBounds=true;
 		BitmapFactory.decodeFile(path, options);
 		int oh=options.outHeight;
 		int ow=options.outWidth;
 
+<<<<<<< HEAD
 		//  縦より横のほうが長かった場合、縦と横を入れ替える
+=======
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 		if(ow>oh){		
 			landscape=true;	
 			oh=options.outWidth;
 			ow=options.outHeight;
 		}
 
+<<<<<<< HEAD
 		//  画像のサイズを調節して読み込む
+=======
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 		options.inJustDecodeBounds=false;
 		options.inSampleSize=Math.max(ow/w, oh/h);
 		bm=BitmapFactory.decodeFile(path);
 
+<<<<<<< HEAD
 		//  画像が横向きの場合90度回転させる
+=======
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 		if(landscape){
 			Matrix matrix = new Matrix();
 			matrix.setRotate(90.0f);
@@ -238,7 +309,10 @@ public class Walloon extends Activity {
 					bm.getWidth(), bm.getHeight(), matrix, false);
 		}
 
+<<<<<<< HEAD
 		//Viewと同じ大きさのBitmapに画像を合成する
+=======
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 		bm=Bitmap.createScaledBitmap(bm,
 				(int)(w), (int)(w*(((double)oh)/((double)ow))), false);
 		Bitmap offBitmap=Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
@@ -248,7 +322,13 @@ public class Walloon extends Activity {
 
 		return bm;
 	}
+<<<<<<< HEAD
 	public String getUrl(){
 		return requestToken.getAuthorizationURL();
 	}
+=======
+
+=======
+>>>>>>> f98daafc26026abbb0587e4bf65ef6cf7f01452f
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 }

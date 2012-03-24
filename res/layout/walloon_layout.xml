@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
+=======
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 
     <ImageView
         android:id="@+id/balloonView1"
@@ -12,6 +17,17 @@
         android:src="@drawable/balloon" />
 
     <ImageView
+<<<<<<< HEAD
+=======
+        android:id="@+id/balloonView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/balloon" />
+
+    <ImageView
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
         android:id="@+id/balloonView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +50,11 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="21dp"
         android:layout_toLeftOf="@+id/imageView1"
+<<<<<<< HEAD
         android:src="@drawable/aku_balloon"
+=======
+        android:src="@drawable/balloon"
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
         android:visibility="gone" />
 
     <ImageView
@@ -45,6 +65,7 @@
         android:layout_below="@+id/balloonView2"
         android:src="@drawable/balloon" />
 
+<<<<<<< HEAD
     <ImageView
         android:id="@+id/balloonView4"
         android:layout_width="wrap_content"
@@ -54,4 +75,6 @@
         android:layout_marginBottom="14dp"
         android:src="@drawable/balloon" />
 
+=======
+>>>>>>> ff98aeeae3183774c25a298b1997af5d9f5e11da
 </RelativeLayout>
