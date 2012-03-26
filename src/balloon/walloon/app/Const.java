@@ -22,9 +22,9 @@ public class Const {
     	R.raw.warai2,
     	R.raw.warai3
     };
-    
-	static final String CONSUMER_KEY = "4LSAIKm3oXxBH0nXGPBncA";
-	static final String CONSUMER_SECRET = "xjS98fn6rdrNiHm7JylnQZPICfQ6PvKqttZ0gBc";
+
+	static final String CONSUMER_KEY = "自分のキー";
+	static final String CONSUMER_SECRET = "自分のシークレット";
 
 	static final String TWITTER_SETTING = "Twitter_seting";
 	static final String STATUS = "status";
@@ -32,13 +32,13 @@ public class Const {
 	static final String OAUTH_KEY_SECRET = "oauth_token_secret";
 	static final String OAUTH_KEY_TOKEN = "oauth_token";
 	static final String OAUTH_VERIFIER = "oauth_verifier";
-	
+
 	static final String CALLBACK_URL = "https://twitter.com/";
-	
+
 	static final String AUTH_URL = "auth_url";
 	static final String[] TWEET_STRING_HEAD_7 = {
 		"ボクは",  "現在の記録は",  "ただいま",  "",
-		"なんだかんだで",  "ちなみに",  "僕のスコアは" 
+		"なんだかんだで",  "ちなみに",  "僕のスコアは"
 	};
 	static final String[] TWEET_STRING_TAIL_7 = {
 		"をわるーんしたよ！ ", "でございます。 ",  "わるーんしました。 ", "か...ふむ、こんなものか ",
